@@ -9,7 +9,7 @@ export default function Navbar() {
     return (
         <nav className="w-full bg-pink-100 border-b border-pink-300 shadow-sm">
             <div className="w-full mx-auto px-4 flex items-center justify-between h-16">
-                <Link to="/" className="text-2xl font-serif font-bold text-pink-700 cursor-pointer">Baisa</Link>
+                <Link to="/" className="text-2xl font-serif font-bold text-pink-700 cursor-pointer ml-9">Baisa</Link>
 
                 <div className="hidden md:flex flex-1 justify-center">
                     <div className="flex space-x-6">
@@ -22,7 +22,7 @@ export default function Navbar() {
                     </div>
                 </div>
 
-                <div className="flex items-center space-x-4">
+                <div className="flex items-center space-x-4 mr-9">
 
                     <button className="text-pink-700 hover:text-pink-900" aria-label="Search">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-6 h-6">
