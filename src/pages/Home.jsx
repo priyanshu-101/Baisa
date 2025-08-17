@@ -3,6 +3,7 @@ import ClothingCarousel from '../components/ClothingCarousel';
 import { Link } from 'react-router-dom';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import videoFile from '../assets/video.mp4';
 
 const Home = () => {
     // Product data array
@@ -135,6 +136,49 @@ const Home = () => {
                                 <p className="text-pink-600 font-semibold text-lg">{product.price}</p>
                             </div>
                         ))}
+                    </div>
+                </div>
+            </div>
+
+            <div className="w-full bg-gradient-to-b from-pink-50 to-white py-20" data-aos="fade-up" data-aos-duration="800">
+                <div className="w-full px-6 md:px-12">
+                    <div className="text-center mb-12 max-w-4xl mx-auto" data-aos="fade-up" data-aos-delay="200">
+                        <h2 className="text-4xl md:text-5xl font-serif font-bold text-gray-800 mb-6">
+                            Experience Baisa
+                        </h2>
+                        <p className="text-lg md:text-xl text-gray-600">
+                            Discover the artistry, elegance, and craftsmanship that defines our collection
+                        </p>
+                    </div>
+
+                    <div className="w-full " data-aos="zoom-in" data-aos-delay="400">
+                        <div className="relative overflow-hidden rounded-2xl shadow-2xl">
+                            <video
+                                className="w-full h-[200px] md:h-[400px] lg:h-[500px] object-cover"
+                                autoPlay
+                                muted
+                                loop
+                                playsInline
+                                controls={false}
+                            >
+                                <source src={videoFile} type="video/mp4" />
+                                Your browser does not support the video tag.
+                            </video>
+                            
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent">
+                                <div className="absolute bottom-8 left-8 md:bottom-12 md:left-12 text-white">
+                                    <h3 className="text-2xl md:text-4xl font-bold mb-3 font-serif">
+                                        Crafted with Love
+                                    </h3>
+                                    <p className="text-lg md:text-xl opacity-90 max-w-lg">
+                                        Every thread tells a story of tradition, every stitch speaks of passion
+                                    </p>
+                                    <button className="mt-6 bg-white/90 hover:bg-white text-pink-600 px-8 py-3 rounded-full font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105">
+                                        Explore Collection
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
