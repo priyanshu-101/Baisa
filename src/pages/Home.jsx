@@ -5,6 +5,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import videoFile from '../assets/video.mp4';
 import { ArrowRight } from 'lucide-react';
+import WhatsAppFloat from '../components/WhatsAppFloat';
 
 const Home = () => {
     // Product data array
@@ -91,6 +92,9 @@ const Home = () => {
     return (
         <div className="w-full bg-gradient-to-b from-pink-50 to-white min-h-screen" data-aos="fade-up" data-aos-duration="600" data-aos-delay="400">
             <ClothingCarousel />
+            <div className="relative w-full h-20">
+                <WhatsAppFloat />
+            </div>
             <div className="w-full mx-auto px-6 md:px-12 py-16">
                 <div className="text-center space-y-8">
 
