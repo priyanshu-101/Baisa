@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import ClothingCarousel from '../components/ClothingCarousel';
+import Images from '../components/Images';
 import { Link } from 'react-router-dom';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -247,6 +248,8 @@ const Home = () => {
                     </div>
                 </div>
             </div>
+
+            <Images />
         </div>
     );
 };
